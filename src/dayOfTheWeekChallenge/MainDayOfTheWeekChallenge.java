@@ -11,6 +11,8 @@ public class MainDayOfTheWeekChallenge {
         printDayOfWeekIfElse(5);
         printDayOfWeekIfElse(-1);
 
+        System.out.println("ffffff");
+
 
     }
 
