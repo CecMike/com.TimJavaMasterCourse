@@ -12,6 +12,7 @@ public class BaseBurger {
     private String meat;
     private double price = 1.99d;
     private ArrayList<String> additions = new ArrayList<String>(null);
+    private int maxAddition = 4;
 
     public BaseBurger(String name, String breadRoll, String meat) {
         this.name = name;
@@ -59,7 +60,22 @@ public class BaseBurger {
         }
     }
 
+    public void setMaxAddition(int maxAddition) {
+        this.maxAddition = maxAddition;
+    }
+
+    public int getMaxAddition() {
+        return maxAddition;
+    }
+
     public void setAdditions(ArrayList<String> additions) {
         this.additions = additions;
+    }
+
+
+    public void printAdditions() {
+        for (int i = 0; i < getAdditions().size(); i++) {
+            System.out.println(getAdditions().get(i));
+        }
     }
 }

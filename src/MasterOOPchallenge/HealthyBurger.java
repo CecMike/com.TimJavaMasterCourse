@@ -7,6 +7,7 @@ public class HealthyBurger extends BaseBurger {
     public HealthyBurger(String meat) {
         super("Bills Healthy Burger", "Rye Bread Roll", meat);
         super.setPrice(2.99d);
+        super.setMaxAddition(6);
     }
 
     @Override

@@ -45,4 +45,8 @@ public class Menu {
     public double getMenuPrice() {
         return menuPrice;
     }
+
+    public String getSize() {
+        return size;
+    }
 }

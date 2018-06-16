@@ -7,7 +7,9 @@ public class DeluxeBurger extends BaseBurger{
     public DeluxeBurger(String name, String breadRoll, String meat, String size) {
         super(name, breadRoll, meat);
         this.deluxMenu = new Menu(true,true, size);
-        super.setPrice(getPrice()+ deluxMenu.getMenuPrice() - 0.2d);
+        this.setPrice(getPrice()+deluxMenu.getMenuPrice()*0.2d);
         }
 
+
+      
 }
