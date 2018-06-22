@@ -7,21 +7,16 @@ public class BaseBurger {
 
     Scanner sc = new Scanner(System.in);
 
-    private String name;
     private String breadRoll;
     private String meat;
     private double price = 1.99d;
     private ArrayList<String> additions = new ArrayList<String>(null);
     private int maxAddition = 4;
 
-    public BaseBurger(String name, String breadRoll, String meat) {
-        this.name = name;
+    public BaseBurger(String breadRoll, String meat) {
+
         this.breadRoll = breadRoll;
         this.meat = meat;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getBreadRoll() {
